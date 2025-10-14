@@ -11,27 +11,42 @@
                                     <!-- heading -->
     <header class="fixed lg:w-full md:w-full w-full top-0 left-0 bg-blue-900/90 shadow-md hover:bg-blue-900/30 hover:backdrop-blur-md z-50 transition-all duration-300">
     <nav class="py-4 lg:px-4 md:px-20 px-10 lg:w-[1000px] mx-auto justify-between flex">
+        <!-- all -->
             <div class="flex text-white items-center">
-
+             <!-- h1 -->
             <h1 class="font-bold lg:text-3xl md:text-3xl text-md text-white tracking-tight leading-tight">DENTACARE</h1>
-
-            
-            
-            <div class="flex lg:space-x-8 md:space-x-10 hidden md:flex lg:ml-30 md:ml-5">
-                <a href="#" class="hover:text-blue-300">Home</a>
-                <a href="#" class="hover:text-blue-300">About</a>
-                <a href="#" class="hover:text-blue-300">Service</a>
-                <a href="#" class="hover:text-blue-300">Doctors</a>
-                <a href="#" class="hover:text-blue-300">Blog</a>
-                <a href="#" class="hover:text-blue-300">Contact</a>
-                                         
+            <!-- links for large screen -->
+            <div class="flex lg:space-x-5 md:space-x-10 hidden lg:flex lg:ml-30 md:ml-5">
+                <a href="index.html" class="hover:text-blue-300">Home</a>
+                <a href="#about" class="hover:text-blue-300">About</a>
+                <a href="#service" class="hover:text-blue-300">Service</a>
+                <a href="#doctors" class="hover:text-blue-300">Doctors</a>
+                <a href="#blog" class="hover:text-blue-300">Blog</a>
+                <a href="#contact" class="hover:text-blue-300">Contact</a>
+                <a href="#faq" class="hover:text-blue-300">FAQ</a>                            
             </div>
+            <!-- button -->
+            <div class="md:ml-100 lg:ml-0">
             <button class="border-1 border-blue-600 bg-blue-600 rounded-full lg:px-6 md:px-3 lg:p-2 md:p-2 p-1 lg:ml-7 md:ml-3 ml-5 px-3 hover:shadow-md hover:scale-105 duration-300">
                 Book Appointment
             </button>
             </div>
-            
-    </nav>
+             <!-- mobile menu -->
+                 <div class="lg:hidden md:pl-9 pl-4">
+                    <button id="btn" class="lg:text-3xl md:text-3xl text-2xl">☰</button>
+                 </div>
+            </div>
+            </nav>
+             <!-- links for small screen -->
+            <div class="block lg:hidden hidden absolute w-full" id="menu">
+                <a href="index.html" class="hover:text-black p-3 block bg-blue-600 hover:bg-yellow-300 hover:font-bold">Home</a>
+                <a href="#about" class="hover:text-black block p-3 bg-blue-600 hover:bg-yellow-300 hover:font-bold">About</a>
+                <a href="#service" class="hover:text-black block p-3 bg-blue-600 hover:bg-yellow-300 hover:font-bold">Service</a>
+                <a href="#doctors" class="hover:text-black block p-3 bg-blue-600 hover:bg-yellow-300 hover:font-bold">Doctors</a>
+                <a href="#blog" class="hover:text-black block p-3 bg-blue-600 hover:bg-yellow-300 hover:font-bold">Blog</a>
+                <a href="#contact" class="hover:text-black block p-3 bg-blue-600 hover:bg-yellow-300 hover:font-bold">Contact</a>
+                <a href="#faq" class="hover:text-black block p-3 bg-blue-600 hover:bg-yellow-300 hover:font-bold">FAQ</a>                            
+            </div>    
     </header> 
                                     <!-- hero page -->
 
@@ -48,7 +63,7 @@
     </div>
 </section>
                                  <!-- Our Services keep you smiling -->
-     <section class="bg-gradient-to-b from-white to-blue-50 py-20">
+     <section class="bg-gradient-to-b from-white to-blue-50 py-20" id="service">
     <div class="text-center mt-2">
         <h1 class="lg:text-5xl md:text-5xl text-2xl font-bold font-black leading-tighter tracking-tighter">Our Services Keep You Smiling</h1>
         <p class="mt-5 text-gray-700">Discover professional dental services crafted to enhance your smile’s health and beauty.</p>
@@ -109,7 +124,7 @@
 
                                      <!-- teeth -->
                                       
- <section class="bg-white py-20">
+ <section class="bg-white py-20" id="about">
     <div class="lg:h-35 md:h-35 lg:flex md:flex lg:justify-center md:justify-center lg:space-x-6 md:space-x-6 space-y-10 mx-15">
         
                                  <!-- box one -->
@@ -147,7 +162,7 @@
 </section>
                                    <!-- expect Team -->
                                    
-    <section class="bg-gradient-to-b from-gray-50 to-white py-20">
+    <section class="bg-gradient-to-b from-gray-50 to-white py-20" id="doctors">
         <div class="text-center">
         <h1 class="text-3xl font-bold">Meet Our Expext Team</h1>
         </div>
@@ -182,7 +197,7 @@
         </div>
     </section>
                                        <!-- what our patients says -->
-    <section class="bg-gray-100 py-20">
+    <section class="bg-gray-100 py-20" id="faq">
     <div class="mt-20 text-center">
         <h1 class="text-3xl font-bold">What our patients say</h1>
         <p class="pt-4">A small river named Duden flows by their place, offering a serene dental experience.</p>
@@ -211,7 +226,7 @@
     </div>
     </section>
                            <!-- latest blog Posts -->
-    <section>
+    <section id="blog">
     <div class="text-center">
         <p class="font-bold text-3xl mt-40">Latest Blog Posts</p>
         <p>Stay updated with our latest dental care tips and news.</p>
@@ -242,7 +257,7 @@
     </div>
     </section>
                                        <!-- frequently asked questions -->
-    <section class="bg-gradient-to-b from-gray-50 to-white py-20 mt-20">
+    <section class="bg-gradient-to-b from-gray-50 to-white py-20 mt-20" id="faq">
         <div class="mt-30 text-center ">
             <p class="text-4xl font-bold tracking-tight">Frequently Asked Questions</p>
             <p class="pt-6 text-gray-700 mx-10">Find answers to common questions about our dental services.</p>
@@ -274,7 +289,7 @@
         </div>
     </section>
                            <!-- Get in touch  -->
-    <section class="bg-gray-200 pt-19 pb-15 relative">
+    <section class="bg-gray-200 pt-19 pb-15 relative" id="contact">
           <div class="absolute top-0 left-0 w-full h-[48px] overflow-hidden">
                 <svg class="relative block w-full h-12" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113.64,31.08,1200,56.86V0Z" fill="#ffffff"></path>
@@ -369,6 +384,16 @@
    
         <p class="text-center mt-5 text-sm">&copy;2025 DentaCare. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        let btn = document.getElementById("btn")
+        let menu = document.getElementById("menu")
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle(`hidden`)
+        })
+    </script>
+
     
 </body>
 </html>
